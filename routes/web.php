@@ -22,6 +22,39 @@ Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
 
+    Route::view('board', 'board')
+    ->middleware(['auth', 'verified'])
+    ->name('board');
+
+        Route::view('budgets', 'budgets')
+    ->middleware(['auth', 'verified'])
+    ->name('budgets');
+
+            Route::view('financials', 'financials')
+    ->middleware(['auth', 'verified'])
+    ->name('financials');
+
+                Route::view('governing', 'governing')
+    ->middleware(['auth', 'verified'])
+    ->name('governing');
+
+                    Route::view('insurance', 'insurance')
+    ->middleware(['auth', 'verified'])
+    ->name('insurance');
+
+                    Route::view('meetings', 'meetings')
+    ->middleware(['auth', 'verified'])
+    ->name('meetings');
+
+                        Route::view('miamidade', 'miamidade')
+    ->middleware(['auth', 'verified'])
+    ->name('miamidade');
+
+
+                        Route::view('records', 'records')
+    ->middleware(['auth', 'verified'])
+    ->name('records');
+
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');
 
