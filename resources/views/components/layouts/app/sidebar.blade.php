@@ -16,13 +16,13 @@
                 <flux:navlist.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Dashboard') }}</flux:navlist.item>
 
 
-                <flux:navlist.item :href="route('board')" :current="request()->routeIs('board')" wire:navigate>{{ __('Board & Management') }}</flux:navlist.item>
-                <flux:navlist.item :href="route('financials')" :current="request()->routeIs('financials')" wire:navigate>{{ __('Financials') }}</flux:navlist.item>
-                <flux:navlist.item :href="route('governing')" :current="request()->routeIs('governing')" wire:navigate>{{ __('Governing Documents') }}</flux:navlist.item>
-                <flux:navlist.item :href="route('insurance')" :current="request()->routeIs('insurance')" wire:navigate>{{ __('Insurance') }}</flux:navlist.item>
-                <flux:navlist.item :href="route('meetings')" :current="request()->routeIs('meetings')" wire:navigate>{{ __('Meetings') }}</flux:navlist.item>
-                <flux:navlist.item :href="route('miamidade')" :current="request()->routeIs('miamidade')" wire:navigate>{{ __('Miami Dade County') }}</flux:navlist.item>
-                <flux:navlist.item :href="route('records')" :current="request()->routeIs('records')" wire:navigate>{{ __('Records Requests') }}</flux:navlist.item>
+                <flux:navlist.item icon="building-office-2" :href="route('board')" :current="request()->routeIs('board')" wire:navigate>{{ __('Board & Management') }}</flux:navlist.item>
+                <flux:navlist.item icon="document-currency-dollar" :href="route('financials')" :current="request()->routeIs('financials')" wire:navigate>{{ __('Financials') }}</flux:navlist.item>
+                <flux:navlist.item icon="building-library" :href="route('governing')" :current="request()->routeIs('governing')" wire:navigate>{{ __('Governing Documents') }}</flux:navlist.item>
+                <flux:navlist.item icon="banknotes" :href="route('insurance')" :current="request()->routeIs('insurance')" wire:navigate>{{ __('Insurance') }}</flux:navlist.item>
+                <flux:navlist.item icon="chat-bubble-left-right" :href="route('meetings')" :current="request()->routeIs('meetings')" wire:navigate>{{ __('Meetings') }}</flux:navlist.item>
+                <flux:navlist.item icon="sun" :href="route('miamidade')" :current="request()->routeIs('miamidade')" wire:navigate>{{ __('Miami Dade County') }}</flux:navlist.item>
+                <flux:navlist.item icon="document-duplicate" :href="route('records')" :current="request()->routeIs('records')" wire:navigate>{{ __('Records Requests') }}</flux:navlist.item>
 
             </flux:navlist.group>
         </flux:navlist>
